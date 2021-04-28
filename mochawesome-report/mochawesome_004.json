@@ -1,0 +1,126 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2020-12-19T16:19:34.626Z",
+    "end": "2020-12-19T16:20:47.932Z",
+    "duration": 73306,
+    "testsRegistered": 2,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 1,
+    "hasSkipped": true
+  },
+  "results": [
+    {
+      "uuid": "3c5c3a55-7eff-4d24-90e7-1b79503b323c",
+      "title": "",
+      "fullFile": "cypress\\integration\\test.feature",
+      "file": "cypress\\integration\\test.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "2b6372ea-40cd-4af8-826c-a7906aee1e5b",
+          "title": "Registrar na Demo Automating",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Acessar, inserir informações e confirmar registro",
+              "fullTitle": "Registrar na Demo Automating Acessar, inserir informações e confirmar registro",
+              "timedOut": null,
+              "duration": 24768,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "TypeError: PageTest.SelectCountry is not a function",
+                "estack": "TypeError: PageTest.SelectCountry is not a function\n    at Context.eval (http://demo.automationtesting.in/__cypress/tests?p=cypress\\integration\\test.feature:358:212)\n    at Context.resolveAndRunStepDefinition (http://demo.automationtesting.in/__cypress/tests?p=cypress\\integration\\test.feature:12115:9)\n    at Context.eval (http://demo.automationtesting.in/__cypress/tests?p=cypress\\integration\\test.feature:11456:35)",
+                "diff": null
+              },
+              "uuid": "d712ea71-265f-4220-be7e-b64b74a290b0",
+              "parentUUID": "2b6372ea-40cd-4af8-826c-a7906aee1e5b",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Acessar, inserir informações incorreto",
+              "fullTitle": "Registrar na Demo Automating Acessar, inserir informações incorreto",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "7407dc0d-e370-471a-81e4-11f9a61a5b58",
+              "parentUUID": "2b6372ea-40cd-4af8-826c-a7906aee1e5b",
+              "isHook": false,
+              "skipped": true
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "d712ea71-265f-4220-be7e-b64b74a290b0"
+          ],
+          "pending": [],
+          "skipped": [
+            "7407dc0d-e370-471a-81e4-11f9a61a5b58"
+          ],
+          "duration": 24768,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.1"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false
+      },
+      "version": "5.1.0"
+    }
+  }
+}

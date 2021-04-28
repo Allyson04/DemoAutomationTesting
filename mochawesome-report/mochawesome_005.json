@@ -1,0 +1,126 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2020-12-19T16:41:46.305Z",
+    "end": "2020-12-19T16:42:57.497Z",
+    "duration": 71192,
+    "testsRegistered": 2,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 1,
+    "hasSkipped": true
+  },
+  "results": [
+    {
+      "uuid": "612c6501-34ab-4d7b-ba94-acf5f35165d2",
+      "title": "",
+      "fullFile": "cypress\\integration\\test.feature",
+      "file": "cypress\\integration\\test.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "dd228e50-247c-41f8-aa79-0dfa8b06518f",
+          "title": "Registrar na Demo Automating",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Acessar, inserir informações e confirmar registro",
+              "fullTitle": "Registrar na Demo Automating Acessar, inserir informações e confirmar registro",
+              "timedOut": null,
+              "duration": 55650,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "AssertionError: Timed out retrying: Expected to find element: `#msdd + div > ul > :nth-child(2)`, but never found it.",
+                "estack": "AssertionError: Timed out retrying: Expected to find element: `#msdd + div > ul > :nth-child(2)`, but never found it.\n    at TestPage.selectLanguages (http://demo.automationtesting.in/__cypress/tests?p=cypress\\integration\\test.feature:290:57)\n    at Context.eval (http://demo.automationtesting.in/__cypress/tests?p=cypress\\integration\\test.feature:358:159)\n    at Context.resolveAndRunStepDefinition (http://demo.automationtesting.in/__cypress/tests?p=cypress\\integration\\test.feature:12115:9)\n    at Context.eval (http://demo.automationtesting.in/__cypress/tests?p=cypress\\integration\\test.feature:11456:35)",
+                "diff": null
+              },
+              "uuid": "dc7bbe89-2f17-49c9-83b8-ff36af931ee9",
+              "parentUUID": "dd228e50-247c-41f8-aa79-0dfa8b06518f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Acessar, inserir informações incorreto",
+              "fullTitle": "Registrar na Demo Automating Acessar, inserir informações incorreto",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "4f4fd633-e9bc-4d45-a42a-8f1bbca6001b",
+              "parentUUID": "dd228e50-247c-41f8-aa79-0dfa8b06518f",
+              "isHook": false,
+              "skipped": true
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "dc7bbe89-2f17-49c9-83b8-ff36af931ee9"
+          ],
+          "pending": [],
+          "skipped": [
+            "4f4fd633-e9bc-4d45-a42a-8f1bbca6001b"
+          ],
+          "duration": 55650,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.1"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false
+      },
+      "version": "5.1.0"
+    }
+  }
+}

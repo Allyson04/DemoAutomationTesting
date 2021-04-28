@@ -1,0 +1,126 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2020-12-18T01:21:38.644Z",
+    "end": "2020-12-18T01:23:05.274Z",
+    "duration": 86630,
+    "testsRegistered": 2,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 1,
+    "hasSkipped": true
+  },
+  "results": [
+    {
+      "uuid": "e5e897ad-48b7-485c-aed1-9822c4188b55",
+      "title": "",
+      "fullFile": "cypress\\integration\\test.feature",
+      "file": "cypress\\integration\\test.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "0248ce88-fdbe-4b6e-af8e-beea6e7eaa60",
+          "title": "Registrar na Demo Automating",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Acessar, inserir informações e confirmar registro",
+              "fullTitle": "Registrar na Demo Automating Acessar, inserir informações e confirmar registro",
+              "timedOut": null,
+              "duration": 68122,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "CypressError: `cy.screenshot()` timed out waiting `30000ms` to complete.\n\nhttps://on.cypress.io/screenshot",
+                "estack": "CypressError: `cy.screenshot()` timed out waiting `30000ms` to complete.\n\nhttps://on.cypress.io/screenshot\n    at http://demo.automationtesting.in/__cypress/runner/cypress_runner.js:159062:22\n    at tryCatcher (http://demo.automationtesting.in/__cypress/runner/cypress_runner.js:10584:23)\n    at http://demo.automationtesting.in/__cypress/runner/cypress_runner.js:5706:41\n    at tryCatcher (http://demo.automationtesting.in/__cypress/runner/cypress_runner.js:10584:23)\n    at Promise._settlePromiseFromHandler (http://demo.automationtesting.in/__cypress/runner/cypress_runner.js:8519:31)\n    at Promise._settlePromise (http://demo.automationtesting.in/__cypress/runner/cypress_runner.js:8576:18)\n    at Promise._settlePromise0 (http://demo.automationtesting.in/__cypress/runner/cypress_runner.js:8621:10)\n    at Promise._settlePromises (http://demo.automationtesting.in/__cypress/runner/cypress_runner.js:8697:18)\n    at _drainQueueStep (http://demo.automationtesting.in/__cypress/runner/cypress_runner.js:5291:12)\n    at _drainQueue (http://demo.automationtesting.in/__cypress/runner/cypress_runner.js:5284:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://demo.automationtesting.in/__cypress/runner/cypress_runner.js:5300:5)\n    at Async.drainQueues (http://demo.automationtesting.in/__cypress/runner/cypress_runner.js:5170:14)\nFrom Your Spec Code:\n    at TestPage.AcessWebSite (http://demo.automationtesting.in/__cypress/tests?p=cypress\\integration\\test.feature:214:10)\n    at Context.eval (http://demo.automationtesting.in/__cypress/tests?p=cypress\\integration\\test.feature:322:12)\n    at Context.resolveAndRunStepDefinition (http://demo.automationtesting.in/__cypress/tests?p=cypress\\integration\\test.feature:12096:9)\n    at Context.eval (http://demo.automationtesting.in/__cypress/tests?p=cypress\\integration\\test.feature:11437:35)\nFrom Your Spec Code:\n    at TestPage.AcessWebSite (http://demo.automationtesting.in/__cypress/tests?p=cypress\\integration\\test.feature:214:10)\n    at Context.eval (http://demo.automationtesting.in/__cypress/tests?p=cypress\\integration\\test.feature:322:12)\n    at Context.resolveAndRunStepDefinition (http://demo.automationtesting.in/__cypress/tests?p=cypress\\integration\\test.feature:12096:9)\n    at Context.eval (http://demo.automationtesting.in/__cypress/tests?p=cypress\\integration\\test.feature:11437:35)",
+                "diff": null
+              },
+              "uuid": "e9adbcb1-d1eb-449a-89f5-2c8e0c278249",
+              "parentUUID": "0248ce88-fdbe-4b6e-af8e-beea6e7eaa60",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Acessar, inserir informações incorreto",
+              "fullTitle": "Registrar na Demo Automating Acessar, inserir informações incorreto",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "e0d528f5-8155-4cc5-a530-f718498fc244",
+              "parentUUID": "0248ce88-fdbe-4b6e-af8e-beea6e7eaa60",
+              "isHook": false,
+              "skipped": true
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "e9adbcb1-d1eb-449a-89f5-2c8e0c278249"
+          ],
+          "pending": [],
+          "skipped": [
+            "e0d528f5-8155-4cc5-a530-f718498fc244"
+          ],
+          "duration": 68122,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.1"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false
+      },
+      "version": "5.1.0"
+    }
+  }
+}

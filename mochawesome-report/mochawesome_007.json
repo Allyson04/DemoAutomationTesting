@@ -1,0 +1,129 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 0,
+    "pending": 0,
+    "failures": 2,
+    "start": "2021-04-10T17:30:23.603Z",
+    "end": "2021-04-10T17:33:33.831Z",
+    "duration": 190228,
+    "testsRegistered": 2,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "185ffe65-239a-4903-8b30-225e5daac1c3",
+      "title": "",
+      "fullFile": "cypress\\integration\\test.feature",
+      "file": "cypress\\integration\\test.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "1e930cfe-3f1c-4373-819f-4786b6a25552",
+          "title": "Registrar na Demo Automating",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Acessar, inserir informações e confirmar registro",
+              "fullTitle": "Registrar na Demo Automating Acessar, inserir informações e confirmar registro",
+              "timedOut": null,
+              "duration": 89157,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "AssertionError: Timed out retrying: Expected to find content: 'The requested URL was not found on this server.' within the element: <section#section> but never did.",
+                "estack": "AssertionError: Timed out retrying: Expected to find content: 'The requested URL was not found on this server.' within the element: <section#section> but never did.\n    at TestPage.validate (http://demo.automationtesting.in/__cypress/tests?p=cypress\\integration\\test.feature:335:39)\n    at Context.eval (http://demo.automationtesting.in/__cypress/tests?p=cypress\\integration\\test.feature:365:12)\n    at Context.resolveAndRunStepDefinition (http://demo.automationtesting.in/__cypress/tests?p=cypress\\integration\\test.feature:12116:9)\n    at Context.eval (http://demo.automationtesting.in/__cypress/tests?p=cypress\\integration\\test.feature:11457:35)",
+                "diff": null
+              },
+              "uuid": "db09e5ab-64df-4ffe-af9c-843f59d0c063",
+              "parentUUID": "1e930cfe-3f1c-4373-819f-4786b6a25552",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Acessar, inserir informações incorreto",
+              "fullTitle": "Registrar na Demo Automating Acessar, inserir informações incorreto",
+              "timedOut": null,
+              "duration": 81191,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "CypressError: `cy.select()` can only be called on a `<select>`. Your subject is a: `<input type=\"radio\" name=\"radiooptions\" ng-model=\"radiovalue\" value=\"FeMale\" class=\"ng-pristine ng-untouched ng-valid\">`\n\nhttps://on.cypress.io/select",
+                "estack": "CypressError: `cy.select()` can only be called on a `<select>`. Your subject is a: `<input type=\"radio\" name=\"radiooptions\" ng-model=\"radiovalue\" value=\"FeMale\" class=\"ng-pristine ng-untouched ng-valid\">`\n\nhttps://on.cypress.io/select\n    at Context.select (http://demo.automationtesting.in/__cypress/runner/cypress_runner.js:153050:19)\n    at Context.<anonymous> (http://demo.automationtesting.in/__cypress/runner/cypress_runner.js:169999:21)\nFrom Your Spec Code:\n    at TestPage.selectGenderWrong (http://demo.automationtesting.in/__cypress/tests?p=cypress\\integration\\test.feature:184:43)\n    at Context.eval (http://demo.automationtesting.in/__cypress/tests?p=cypress\\integration\\test.feature:368:128)\n    at Context.resolveAndRunStepDefinition (http://demo.automationtesting.in/__cypress/tests?p=cypress\\integration\\test.feature:12116:9)\n    at Context.eval (http://demo.automationtesting.in/__cypress/tests?p=cypress\\integration\\test.feature:11457:35)\nFrom Your Spec Code:\n    at TestPage.selectGenderWrong (http://demo.automationtesting.in/__cypress/tests?p=cypress\\integration\\test.feature:184:43)\n    at Context.eval (http://demo.automationtesting.in/__cypress/tests?p=cypress\\integration\\test.feature:368:128)\n    at Context.resolveAndRunStepDefinition (http://demo.automationtesting.in/__cypress/tests?p=cypress\\integration\\test.feature:12116:9)\n    at Context.eval (http://demo.automationtesting.in/__cypress/tests?p=cypress\\integration\\test.feature:11457:35)",
+                "diff": null
+              },
+              "uuid": "84790f21-0396-4071-a111-e9ac9615da2b",
+              "parentUUID": "1e930cfe-3f1c-4373-819f-4786b6a25552",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "db09e5ab-64df-4ffe-af9c-843f59d0c063",
+            "84790f21-0396-4071-a111-e9ac9615da2b"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 170348,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.1"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false
+      },
+      "version": "5.1.0"
+    }
+  }
+}
